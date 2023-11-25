@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="content/css/contato_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <script src="content/js/jquery-3.6.4.min.js"></script>
+    <script src="content/js/api.js"></script>
+    <script src="content/js/script_contato.js"></script>
+
+    <div class="body-wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login_admin.html">Área Admin</a></li>
+            </ul>   
+        </nav>
+
+        <section id="hero">
+
+            <form id="contato-form" action="">
+
+                <h1>Contato</h1>
+
+                <div class="input-wrapper">
+                    <label for="nome"> Nome</label>
+                    <input type="text" placeholder="John Doe" required="" id="nome" />
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="email-contato">E-mail</label>
+                    <input type="email" placeholder="example@mail.com" required="" id="email-contato" />
+                </div>
+
+                <div id="input-wrapper">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea type="text" placeholder="Digite sua mensagem aqui." required="" id="mensagem"></textarea>
+                </div>
+
+                <div>
+                    <button type="button" id="enviar-email" onclick="pegarDadosContato()">Enviar</button>
+                </div>
+
+            </form>
+
+        </section>
+    </div>
+
+
+</body>
+
+</html>

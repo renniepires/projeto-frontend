@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="content/css/login_admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login_admin.html">Área Admin</a></li>
+            </ul>   
+        </nav>
+
+        <section id="hero">
+            <form id="login-form" action="">
+                <h1>Login</h1>
+
+                <div class="input-wrapper">
+                    <label for="email-login">E-mail</label>
+                    <input type="email" placeholder="E-mail" required="" id="email-login" />
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="password">Senha</label>
+                    <input type="password" placeholder="Senha" required="" id="password" />
+                </div>
+                
+                <div class="input-wrapper">
+                    <button type="button" id="fazer-login" onclick="fazerLogin()">Login</button>
+                </div>
+
+            </form>
+        </section>
+    </div>
+
+    <script src="content/js/jquery-3.6.4.min.js"></script>
+    <script src="content/js/api.js"></script>
+    <script src="content/js/script_login.js"></script>
+</body>
+
+</html>
